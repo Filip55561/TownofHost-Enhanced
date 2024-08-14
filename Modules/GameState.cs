@@ -255,6 +255,7 @@ public class PlayerState(byte playerId)
         Bombed,
         Misfire,
         Torched,
+        UnTorched,
         Sniped,
         Revenge,
         Execution,

@@ -5,6 +5,7 @@ using TOHE.Roles.AddOns.Crewmate;
 using TOHE.Roles.AddOns.Impostor;
 using UnityEngine;
 using TOHE.Roles.Core;
+using AmongUs.GameOptions;
 
 namespace TOHE;
 
@@ -922,7 +923,13 @@ public static class Options
     
         Torch.SetupCustomOptions();
 
-        Watcher.SetupCustomOptions();
+        //Watcher.SetupCustomOptions();
+
+        UnTorched.SetupCustomOptions();
+       // TextOptionItem.Create(10000019, "RoleType.CustomHarmful", TabGroup.Addons) // HELPFUL
+         //  .SetGameMode(CustomGameMode.Standard)
+           //.SetColor(new Color32(255, 154, 206, byte.MaxValue));
+
 
         TextOptionItem.Create(10000016, "RoleType.Harmful", TabGroup.Addons) // HARMFUL
             .SetGameMode(CustomGameMode.Standard)

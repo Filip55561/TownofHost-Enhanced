@@ -66,6 +66,7 @@ public class ModNews
             downloaded = true;
             ModNewsURL += TranslationController.Instance.currentLanguage.languageID switch
             {
+            //    SupportedLangs.Czech => "cs_CZ.json",
                 SupportedLangs.German => "de_DE.json",
                 SupportedLangs.Latam => "es_419.json",
                 SupportedLangs.Spanish => "es_ES.json",
@@ -80,7 +81,7 @@ public class ModNews
                 SupportedLangs.SChinese => "zh_CN.json",
                 SupportedLangs.TChinese => "zh_TW.json",
                 _ => "en_US.json", //English and any other unsupported language
-            };
+            }; ;
             var request = UnityWebRequest.Get(ModNewsURL);
             yield return request.SendWebRequest();
             if (request.isNetworkError || request.isHttpError)

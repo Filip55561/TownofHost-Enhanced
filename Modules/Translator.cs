@@ -297,6 +297,7 @@ public static class Translator
         try
         {
             var name = CultureInfo.CurrentUICulture.Name;
+           // if (name.StartsWith("cs")) return SupportedLangs.Czech;
             if (name.StartsWith("en")) return SupportedLangs.English;
             if (name.StartsWith("zh_CHT")) return SupportedLangs.TChinese;
             if (name.StartsWith("zh")) return SupportedLangs.SChinese;

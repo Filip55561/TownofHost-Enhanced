@@ -586,11 +586,16 @@ public static class CustomRolesHelper
                     return false;
                 break;
 
-            case CustomRoles.Watcher:
-                if ((pc.GetCustomRole().IsCrewmate() && !Watcher.CrewCanBeWatcher.GetBool()) || (pc.GetCustomRole().IsNeutral() && !Watcher.NeutralCanBeWatcher.GetBool()) || (pc.GetCustomRole().IsImpostor() && !Watcher.ImpCanBeWatcher.GetBool()))
+            case CustomRoles.UnTorched:
+                if ((pc.GetCustomRole().IsCrewmate() && !UnTorched.CrewCanBeTiebreaker.GetBool()) || (pc.GetCustomRole().IsNeutral() && !UnTorched.NeutralCanBeTiebreaker.GetBool()) || (pc.GetCustomRole().IsImpostor() && !UnTorched.ImpCanBeTiebreaker.GetBool()))
                     return false;
                 break;
-
+            /*
+                    case CustomRoles.Watcher:
+                        if ((pc.GetCustomRole().IsCrewmate() && !Watcher.CrewCanBeWatcher.GetBool()) || (pc.GetCustomRole().IsNeutral() && !Watcher.NeutralCanBeWatcher.GetBool()) || (pc.GetCustomRole().IsImpostor() && !Watcher.ImpCanBeWatcher.GetBool()))
+                            return false;
+                        break;
+            */
             case CustomRoles.Aware:
                 if ((pc.GetCustomRole().IsCrewmate() && !Aware.CrewCanBeAware.GetBool()) || (pc.GetCustomRole().IsNeutral() && !Aware.NeutralCanBeAware.GetBool()) || (pc.GetCustomRole().IsImpostor() && !Aware.ImpCanBeAware.GetBool()))
                     return false;

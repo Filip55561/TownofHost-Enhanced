@@ -34,6 +34,11 @@ internal class Merchant : RoleBase
         CustomRoles.Lucky
     ];
 
+    private static readonly List<CustomRoles> customAddons =
+    [
+        CustomRoles.UnTorched
+    ]; 
+
     private static readonly List<CustomRoles> harmfulAddons =
     [
         CustomRoles.Oblivious,

@@ -854,6 +854,7 @@ public enum CustomRoles
     Tiebreaker,
     TicketsStealer, //stealer
     Torch,
+    UnTorched,
     Trapper,
     Tricky,
     Tired,

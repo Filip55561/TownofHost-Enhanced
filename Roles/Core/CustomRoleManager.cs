@@ -108,14 +108,18 @@ public static class CustomRoleManager
             {
                 switch (subRole)
                 {
+                    /*
                     case CustomRoles.Watcher:
                         Watcher.RevealVotes(opt);
-                        break;
+                        break; */
                     case CustomRoles.Flash:
                         Flash.SetSpeed(player.PlayerId, false);
                         break;
                     case CustomRoles.Torch:
                         Torch.ApplyGameOptions(opt);
+                        break;
+                    case CustomRoles.UnTorched:
+                        UnTorched.ApplyGameOptions(opt);
                         break;
                     case CustomRoles.Tired:
                         Tired.ApplyGameOptions(opt, player);
