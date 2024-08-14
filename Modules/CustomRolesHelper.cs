@@ -1208,7 +1208,7 @@ public static class CustomRolesHelper
            CustomRoles.HexMaster => CountTypes.HexMaster,
            CustomRoles.Necromancer => CountTypes.Necromancer,
            CustomRoles.Stalker => !Stalker.SnatchesWin.GetBool() ? CountTypes.Stalker : CountTypes.Crew,
-           CustomRoles.Arsonist => Arsonist.CanIgniteAnytime() ? CountTypes.Arsonist : CountTypes.Crew,
+           CustomRoles.Arsonist => CountTypes.Arsonist,
            CustomRoles.Shroud => CountTypes.Shroud,
            CustomRoles.Werewolf => CountTypes.Werewolf,
            CustomRoles.Wraith => CountTypes.Wraith,

@@ -161,6 +161,7 @@ public class Main : BasePlugin
     public static bool DoBlockNameChange = false;
     public static int updateTime;
     public const float MinSpeed = 0.0001f;
+    public static int AllAlivePeople;
     public static int AliveImpostorCount;
     public static bool VisibleTasksCount = false;
     public static bool AssignRolesIsStarted = false;

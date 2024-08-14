@@ -2241,6 +2241,13 @@ public static class Utils
             LastImpostor.SetSubRole();
         }
 
+        int AllAlivePlayers = Main.AllAlivePlayerControls.Count(pc => pc);
+        if (Main.AllAlivePeople != AllAlivePlayers)
+        {
+            Logger.Warn("Number of Alive people left: " + AllAlivePlayers, "CountAlivePlayers");
+            Main.AllAlivePeople = AllAlivePlayers;
+        }
+
         if (sendLog)
         {
             var sb = new StringBuilder(100);
