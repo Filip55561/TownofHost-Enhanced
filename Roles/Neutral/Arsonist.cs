@@ -24,9 +24,6 @@ internal class Arsonist : RoleBase
     private static OptionItem ArsonistCooldown;
 
     private static readonly Dictionary<byte, (PlayerControl, float)> ArsonistTimer = [];
-    private static OptionItem ArsonistCanIgniteAnytimeOpt;
-    private static OptionItem ArsonistMinPlayersToIgnite;
-    private static OptionItem ArsonistMaxPlayersToIgnite;
     private static readonly Dictionary<(byte, byte), bool> IsDoused = [];
 
     private static byte CurrentDousingTarget = byte.MaxValue;

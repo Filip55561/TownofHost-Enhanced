@@ -863,7 +863,8 @@ public enum CustomRoles
     VoidBallot,
     Watcher,
     Workhorse,
-    Youtuber   
+    Youtuber,
+    Taskler
 }
 //WinData
 public enum CustomWinner

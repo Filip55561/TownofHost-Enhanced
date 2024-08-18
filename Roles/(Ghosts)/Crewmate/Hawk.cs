@@ -1,4 +1,6 @@
-﻿using AmongUs.GameOptions;
+﻿
+
+using AmongUs.GameOptions;
 using System;
 using TOHE.Roles.Core;
 using TOHE.Roles.Double;

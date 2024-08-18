@@ -118,9 +118,11 @@ public static class CustomRoleManager
                     case CustomRoles.Torch:
                         Torch.ApplyGameOptions(opt);
                         break;
+                        
                     case CustomRoles.UnTorched:
                         UnTorched.ApplyGameOptions(opt);
                         break;
+                        
                     case CustomRoles.Tired:
                         Tired.ApplyGameOptions(opt, player);
                         break;
